@@ -1,4 +1,5 @@
 Expressions: A(n) element of a program that evaluated to provide a value
+(Values can also be expressions)
 
 Value: A data element
 
@@ -36,7 +37,17 @@ These will split out the values 9 and 4 respectively
 
 Here is an exercise 
 
-They want us to write the expression 
-$$
-\sqre
-$$
+Assume that the two short sides of a right triangle have length 3 and 4. What is the length of the long side? Recall the Pythagorean Theorem tells us that: 
+
+$a^2+b^2=c^2$
+
+$$\sqrt{3^2+4^2} = ?$$
+
+Write a BSL Expression that produces the value of ? for this traingle where the other tow side have lengths 3 and 4. 
+
+Here is my attempts 
+
+### Attempt 1 
+```racket 
+(sqrt(+ (sqr3) (sqr 4)))
+```
