@@ -6,5 +6,6 @@ while where == "right":
     where = input("Go left or right?")
 print("you got out ")
 
+#the program is only checking for the user typing in the lowercase version of right. Anything other than that will be treated the same as typing in left to exit 
 
-# it will keep asking you go left or right if you continue to type in right
+#tldr anything other than 'right' skips the loop entirely 
